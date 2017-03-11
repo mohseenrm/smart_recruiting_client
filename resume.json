@@ -18,8 +18,14 @@
 	],
 	"experience": [
 		{
-			"company_1": "2",
-			"company_2": "0.5"
+			"company_1": {
+				"position": "junior dev",
+				"experience": "2"
+			},
+			"company_2": {
+				"position": "intern",
+				"experience": "0.5"
+			}
 		}
 	],
 	"skills": ["js", "python 2", "node", "haskell"],
