@@ -2,5 +2,5 @@
 
 (()=>{
     const name = 'MoMo';
-    console.log(`Hello ${name}!`);
+    console.log(`Hello ${name}! from webpack`);
 })();
