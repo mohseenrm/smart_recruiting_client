@@ -1,42 +1,229 @@
 {
-	"title": "candidate_name",
-	"education": [
-		{
-			"institute_name": "xyz university",
-			"location": "tempe",
-			"degree": "masters",
-			"gpa": "3.4",
-			"duration": "1"
-		},
-		{
-			"institute_name": "xyz university",
-			"location": "pune",
-			"degree": "bachelors",
-			"gpa": "3.9",
-			"duration": "4"
-		}
-	],
-	"experience": [
-		{
-			"company_1": {
-				"position": "junior dev",
-				"experience": "2"
+	"1" : {
+		"candidate_id" : "1",
+		"title": "manoj",
+		"education": [
+			{
+				"institute_name": "san jose university",
+				"location": "san jose",
+				"degree": "masters",
+				"gpa": "3.9",
+				"duration": "2"
 			},
-			"company_2": {
-				"position": "intern",
-				"experience": "0.5"
+			{
+				"institute_name": "pune university",
+				"location": "pune",
+				"degree": "bachelors",
+				"gpa": "3.1",
+				"duration": "4"
 			}
-		}
-	],
-	"skills": ["js", "python 2", "node", "haskell"],
-	"projects": [
-		{
-			"project_title": "project name",
-			"link": "https://abc.com",
-			"description": "whatever description candidate mentions",
-			"skills": ["js", "pwa", "node"]
-		}
-	],
-	"achievements": "sample that the candidate provides",
-	"certification": ["certification_1", "certification_2"]
+		],
+		"experience": [
+			{
+				"company_1": {
+					"position": "junior dev",
+					"description": "worked in TCS consultancy with web development and devops. Automated the workflow for my team, everyone happy",
+					"experience": "2"
+				},
+				"company_2": {
+					"position": "intern",
+					"description": "worked as a summer intern for GS, developed the common equities platform for internal testing. Created dashboards in Splunk",
+					"experience": "0.5"
+				}
+			}
+		],
+		"skills": ["android", "python", "xml", "html"],
+		"projects": [
+			{
+				"project_title": "Monopoly Android App",
+				"link": "https://abc.com",
+				"description": "Created a monopoly game in android. It follows the same rules as the board game and allows user to play offline",
+				"skills": ["java", "android", "xml"]
+			},
+			{
+				"project_title": "magic 8 ball app",
+				"link": "https://abc.com",
+				"description": "created a basic 8 ball app in android",
+				"skills": ["java", "android"]
+			}
+		],
+		"achievements": "",
+		"certification": ["winner of AZ hackathon 2016", ""]
+	},
+	"2" : {
+		"candidate_id" : "2",
+		"title": "John Doe",
+		"education": [
+			{
+				"institute_name": "Arizona State University",
+				"location": "Tempe",
+				"degree": "MCS",
+				"gpa": "4.0",
+				"duration": "1"
+			},
+			{
+				"institute_name": "Anna University",
+				"location": "Chennai",
+				"degree": "Bachelors of Engineering",
+				"gpa": "3.7",
+				"duration": "4"
+			}
+		],
+		"experience": [
+			{
+				"Argus Ventures": {
+					"position": "Web Development Intern",
+					"description": "Led a project team of two, developed a web application which is used to identify the correct area of expertise of an individual and recommend the best set of careers that they are most probable to succeed.",
+					"experience": "0.25"
+				},
+				"Universiti Sains Malaysia": {
+					"position": "Programmer Intern",
+					"description": "Led project team members working on Internet of Things Space project which involved real-time data monitoring from Intel Edison sensors using a web application and a smart phone application. (Final Year Project for UG). Identified and resolved many issues including connection reliability, data archiving. Performed effective software requirement gathering by consulting with supervisor periodically.",
+					"experience": "0.16"
+				}
+			}
+		],
+		"skills": ["Kinet", "python", "C#", "android", "java", "xml"],
+		"projects": [
+			{
+				"project_title": "American Sign Language Recognition",
+				"link": "https://abc.com",
+				"description": "American Sign Language Recognition using Kinect and Myo sensors. A system which can recognize various ASL signs and translate them to gloss. Gloss generated is corrected by a language model built on an already existing ASL corpus.",
+				"skills": ["Kinet", "python", "C#"]
+			},
+			{
+				"project_title": "Context Aware Android Personal Assistant",
+				"link": "https://abc.com",
+				"description": "Context Aware Android Personal Assistant, developed a smart alarm which identifies disturbed sleep episodes based on user movements during sleep and proximity alert when the user enters within a particular radius of a location.",
+				"skills": ["java", "android"]
+			},
+			{
+				"project_title": "Lexical analyser to parse a C++ program",
+				"link": "https://abc.com",
+				"description": "Designed of a Lexical analyser to parse a C++ program from any given program as a part of System Software course using C++. The program separates all words in the input program and classifies it into various tokens.",
+				"skills": ["C++"]
+			}
+		],
+		"achievements": ["Published a paper in the International Journal of Computer Science and Information Technologies (IJCSIT) under the title “Interpretation of Tamil Script using Optical Character Recognition in Android “", "Designed the website for the department of Computer Science and engineering’s technical symposium, Meenakshi Sundararajan Engineering College, Anna University, Chennai, India", "Participated and qualified to round 2 of “CodeVita” coding competition held at India organized by Tata Consultancy Services where over 50,000 students had participated. Coding language: C++"],
+		"certification": []
+	},
+	"3" : {
+		"candidate_id" : "3",
+		"title": "Jaba the Hut",
+		"education": [
+			{
+				"institute_name": "Arizona State University",
+				"location": "Tempe",
+				"degree": "MCS",
+				"gpa": "4.0",
+				"duration": "1"
+			},
+			{
+				"institute_name": "BITS Pilani",
+				"location": "Goa",
+				"degree": "Bachelors of Engineering",
+				"gpa": "3.7",
+				"duration": "4"
+			}
+		],
+		"experience": [
+			{
+				"Arizona State University": {
+					"position": "Graduate Services Assistant",
+					"description": "Graduate Services Assistant for Principles of Programming course. Conduct weekly office hours to advise students on programming principles and evaluate course assignments.",
+					"experience": "0.33"
+				},
+				"IBM": {
+					"position": "Software Engineer",
+					"description": "Developed Android and iOS mobile applications for IBM's Mobile First suite of products. Developed the Mobile First iOS chat application from the ground up, featuring encrypted chat history. Led the Android Secure Browser development and oversaw a 5x growth in number of installs. Designed and implemented the web back end interaction with Google Play EMM APIs’ using Java and Spring framework. Awarded “Customer Champion” (March 2015) in recognition of commitment to debugging complex customer issues. Awarded “Best New Hire” (September 2014).",
+					"experience": "2"
+				},
+				"MaaS360": {
+					"position": "Software Engineer, Intern",
+					"description": "Designed and implemented key new features in the Android Secure Browser application. Enhanced security by adding encryption of the user’s browsing and bookmark data. Designed and prototyped a new Kiosk application which increased the platform base from just Samsung manufactured models to all Android devices.",
+					"experience": "0.5"
+				}
+			}
+		],
+		"skills": ["Java", "Objective C", "C++", "Python", "Scala", "PostgreSQL", "JSON", "XML"],
+		"projects": [
+			{
+				"project_title": "Brain Network (Connectome) based classification using machine learning",
+				"link": "https://abc.com",
+				"description": "Using brain mapping (connectome) data to classify test subjects per gender, math capability and creativity. Currently exploring appropriate machine learning classification techniques and discriminating features.",
+				"skills": ["Matlab", "python"]
+			},
+			{
+				"project_title": "Design and implementation of a graph database using Minibase",
+				"link": "https://abc.com",
+				"description": "Extending and modifying minibase - an existing RDBMS - to support graph database operations",
+				"skills": ["java", "PostgreSQL"]
+			},
+			{
+				"project_title": "Geospatial Operations on Distributed Data using Apache Spark",
+				"link": "https://abc.com",
+				"description": "Applying spatial statistics to spatial-temporal big data to identify statistically significant hot spots using Apache Spark. The dataset consisted of over one billion records representing all Yellow Cab taxi trips in New York City for January 2016. Developed a custom algorithm in Apache Spark to solve this problem.",
+				"skills": ["Apache", "Spark"]
+			}
+		],
+		"achievements": [],
+		"certification": []
+	},
+	"4" : {
+		"candidate_id" : "3",
+		"title": "Luke Vader",
+		"education": [
+			{
+				"institute_name": "Arizona State University",
+				"location": "Tempe",
+				"degree": "MCS",
+				"gpa": "3.78",
+				"duration": "1"
+			},
+			{
+				"institute_name": "College of Engineering, Pune",
+				"location": "Pune",
+				"degree": "Bachelors of Technlogy",
+				"gpa": "7.6",
+				"duration": "4"
+			}
+		],
+		"experience": [
+			{
+				"IntelliSpyre Inc": {
+					"position": "Graduate Assistant",
+					"description": "Created robust crawlers and parsers for extracting information from dark net websites. Data extracted aids in research, and profiling of malicious activity online. Enhancing current drivers for better handling exceptions, memory intensive parsers, and optimizing data for storage.",
+					"experience": "0.66"
+				},
+				"Barclays": {
+					"position": "Technology Analyst,",
+					"description": "Developed an Intelligent monitoring system for the messaging team. The system helped save 4.5 hours of an engineer per day on an average. Automated System along with customized reports. drastically reduced workload of team and lead to better customer satisfaction. Later migrated to Payments team to develop dashboards for smart monitoring using Splunk.",
+					"experience": "1"
+				}
+			}
+		],
+		"skills": ["Java", "Objective C", "C++", "Python", "Scala", "PostgreSQL", "JSON", "XML"],
+		"projects": [
+			{
+				"project_title": "Elixir (Hands-free Health Care Assistant)",
+				"link": "https://mohseenrm.github.io/elixir/",
+				"description": "Elixir is a skill created for Amazon Alexa. It aims at providing accurate medical diagnosis based on patient history and medical databases. Built service as a Progressive Web App for wider audience.",
+				"skills": ["Matlab", "python"]
+			},
+			{
+				"project_title": "Design and implementation of a graph database using Minibase",
+				"link": "https://abc.com",
+				"description": "Extending and modifying minibase - an existing RDBMS - to support graph database operations",
+				"skills": ["java", "PostgreSQL"]
+			},
+			{
+				"project_title": "Geospatial Operations on Distributed Data using Apache Spark",
+				"link": "https://abc.com",
+				"description": "Applying spatial statistics to spatial-temporal big data to identify statistically significant hot spots using Apache Spark. The dataset consisted of over one billion records representing all Yellow Cab taxi trips in New York City for January 2016. Developed a custom algorithm in Apache Spark to solve this problem.",
+				"skills": ["Apache", "Spark"]
+			}
+		],
+		"achievements": [],
+		"certification": []
+	}
 }
