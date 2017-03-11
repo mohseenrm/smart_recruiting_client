@@ -39,3 +39,4 @@ jspm_packages
 #cache files
 .DS_Store
 .vscode
+.sass-cache

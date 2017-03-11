@@ -70,9 +70,7 @@ body {
 
 .profile-picture {
   height: 50%;
-  background: url("../images/sample_pic.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 50%; }
+  width: 50%;
+  background: url("../images/sample_pic.png"); }
 
 /*# sourceMappingURL=main.css.map */
