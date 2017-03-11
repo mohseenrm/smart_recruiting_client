@@ -202,25 +202,25 @@
 				}
 			}
 		],
-		"skills": ["Java", "Objective C", "C++", "Python", "Scala", "PostgreSQL", "JSON", "XML"],
+		"skills": ["Java", "Python", "JavaScript", "C++", "C#", "Git", "Electron", "Django", "Angular", "React", "MongoDB", "MySQL", "Gulp", "Browserify", "SASS", "Mocha", "Chai JS"],
 		"projects": [
 			{
 				"project_title": "Elixir (Hands-free Health Care Assistant)",
 				"link": "https://mohseenrm.github.io/elixir/",
 				"description": "Elixir is a skill created for Amazon Alexa. It aims at providing accurate medical diagnosis based on patient history and medical databases. Built service as a Progressive Web App for wider audience.",
-				"skills": ["Matlab", "python"]
+				"skills": ["Node", "pwa", "SASS", "Alexa"]
 			},
 			{
-				"project_title": "Design and implementation of a graph database using Minibase",
-				"link": "https://abc.com",
-				"description": "Extending and modifying minibase - an existing RDBMS - to support graph database operations",
-				"skills": ["java", "PostgreSQL"]
+				"project_title": "Level Up",
+				"link": "https://mohseenrm.github.io/LevelUpAndroid",
+				"description": "What if life was an RPG game? Level Up allows players to gain experience and skill specific stats. Level Up adapts to player’s experience and skill, and applies the 10,000 hour rule for mastery.",
+				"skills": ["React", "Electron", "Node"]
 			},
 			{
-				"project_title": "Geospatial Operations on Distributed Data using Apache Spark",
-				"link": "https://abc.com",
-				"description": "Applying spatial statistics to spatial-temporal big data to identify statistically significant hot spots using Apache Spark. The dataset consisted of over one billion records representing all Yellow Cab taxi trips in New York City for January 2016. Developed a custom algorithm in Apache Spark to solve this problem.",
-				"skills": ["Apache", "Spark"]
+				"project_title": "Monaco – Distraction Free Writer",
+				"link": "http://monaco.co.nf/",
+				"description": "Monaco allows you to pen your thoughts in the most raw form. Glimpse your progress, check your stats, and more. Monaco offers dynamic suggestions, an integrated YouTube player, and WYSIWYG editor.",
+				"skills": ["Angular JS", "Javascript", "AJAX"]
 			}
 		],
 		"achievements": [],
