@@ -131,4 +131,35 @@ body {
   height: 10%;
   width: 100%; }
 
+.candidate-picture {
+  height: 10%;
+  width: 21%;
+  background: url("../images/sample_pic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 12%; }
+
+.candidate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin: 4%; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+.candidate-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
 /*# sourceMappingURL=main.css.map */

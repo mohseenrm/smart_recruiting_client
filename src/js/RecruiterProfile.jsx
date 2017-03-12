@@ -14,26 +14,31 @@ export default class RecruiterProfile extends React.Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			mainData: []
+			mainData: [],
+			showDetails: "hidden"
 		}
+		this.clickHandler = this.clickHandler.bind(this);
 	}
 	componentDidMount(){
 		axios.get('http://ec2-35-160-77-182.us-west-2.compute.amazonaws.com/results/1')
 			.then((response) => {
-				// console.log(response);
-				// this.setState(response.data);
+
 				const mainData = response.data.responseData;
 				console.log(mainData);
+				const percentData = mainData.map(obj => obj.score = parseFloat(obj.score) * 100);
+				// console.log(percentData);
+				const convertedData = mainData.map(obj => obj.score = parseFloat(obj.score).toFixed(2));
+				// console.log(convertedData);
 				this.setState({mainData});
 				console.log(this.state);
 			});
-		// temp.then();
-		// this.setState = {temp};
-		// temp.then((data)=>{
-		// 	console.log('#');
-		// 	// console.log(data);
-		// 	this.setState = {data};
 		// })
+	}
+
+	clickHandler(e){
+		e.preventDefault();
+		let css = (this.state.showDetails === "hidden" ? "show" : "hidden");
+		this.setState({showDetails: css});
 	}
 
 	render(){
@@ -56,7 +61,15 @@ export default class RecruiterProfile extends React.Component{
 						{/*<div>No new notifications</div>*/}
 						{
 							this.state.mainData.map(data => 
-								<div>{data.email}</div>
+								<div className="candidate" onClick={this.clickHandler}>
+									<div className="candidate-picture"></div>
+									<div className="candidate-details">
+										<span className="candidate-name">{data.name}</span>
+										<span className={this.state.showDetails}>{data.email}</span>
+										<span className={this.state.showDetails}>{data.phoneno}</span>
+									</div>
+									<div className={this.state.showDetails}>{data.score}</div>
+								</div>
 							)
 						}
 					</Pane>

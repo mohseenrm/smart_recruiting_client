@@ -11548,8 +11548,10 @@ var RecruiterProfile = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (RecruiterProfile.__proto__ || Object.getPrototypeOf(RecruiterProfile)).call(this, props));
 
 		_this.state = {
-			mainData: []
+			mainData: [],
+			showDetails: "hidden"
 		};
+		_this.clickHandler = _this.clickHandler.bind(_this);
 		return _this;
 	}
 
@@ -11559,24 +11561,34 @@ var RecruiterProfile = function (_React$Component) {
 			var _this2 = this;
 
 			_axios2.default.get('http://ec2-35-160-77-182.us-west-2.compute.amazonaws.com/results/1').then(function (response) {
-				// console.log(response);
-				// this.setState(response.data);
+
 				var mainData = response.data.responseData;
 				console.log(mainData);
+				var percentData = mainData.map(function (obj) {
+					return obj.score = parseFloat(obj.score) * 100;
+				});
+				console.log(percentData);
+				var convertedData = mainData.map(function (obj) {
+					return obj.score = parseFloat(obj.score).toFixed(2);
+				});
+				console.log(convertedData);
 				_this2.setState({ mainData: mainData });
 				console.log(_this2.state);
 			});
-			// temp.then();
-			// this.setState = {temp};
-			// temp.then((data)=>{
-			// 	console.log('#');
-			// 	// console.log(data);
-			// 	this.setState = {data};
 			// })
+		}
+	}, {
+		key: 'clickHandler',
+		value: function clickHandler(e) {
+			e.preventDefault();
+			var css = this.state.showDetails === "hidden" ? "show" : "hidden";
+			this.setState({ showDetails: css });
 		}
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this3 = this;
+
 			return (
 				// {/*<div className="profile-wrapper">
 				// 	<ProfilePhoto />
@@ -11606,8 +11618,32 @@ var RecruiterProfile = function (_React$Component) {
 							this.state.mainData.map(function (data) {
 								return _react2.default.createElement(
 									'div',
-									null,
-									data.email
+									{ className: 'candidate', onClick: _this3.clickHandler },
+									_react2.default.createElement('div', { className: 'candidate-picture' }),
+									_react2.default.createElement(
+										'div',
+										{ className: 'candidate-details' },
+										_react2.default.createElement(
+											'span',
+											{ className: 'candidate-name' },
+											data.name
+										),
+										_react2.default.createElement(
+											'span',
+											{ className: _this3.state.showDetails },
+											data.email
+										),
+										_react2.default.createElement(
+											'span',
+											{ className: _this3.state.showDetails },
+											data.phoneno
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: _this3.state.showDetails },
+										data.score
+									)
 								);
 							})
 						)
