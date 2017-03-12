@@ -56,7 +56,6 @@ body {
     @include flexbox;
     width: 100%;
     justify-content: center;
-
     margin: 0;
     padding: 0;
 }
@@ -82,7 +81,9 @@ body {
 .tabs__content {
     padding: 25px;
 }
-.button{
+
+.button {
     height: 10%;
     width: 100%;
 }
+

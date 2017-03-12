@@ -8,10 +8,10 @@ const path = require('path');
 // });
 
 module.exports = {
-	entry: path.join(__dirname, 'src', 'js', 'entry.js'),
+	entry: path.join(__dirname, 'src', 'js', 'entry2.js'),
 	output: {
 		path: path.join(__dirname, 'dist', 'js'),
-		filename: 'index_bundle.js'
+		filename: 'index_bundle_2.js'
 	},
 	module: {
 		loaders: [
