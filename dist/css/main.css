@@ -127,4 +127,8 @@ body {
 .tabs__content {
   padding: 25px; }
 
+.button {
+  height: 10%;
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

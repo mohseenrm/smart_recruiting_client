@@ -14,7 +14,9 @@ export default class UploadResume extends React.Component{
 
 	render(){
 		return(
-			<button className="upload-resume" onClick={this.clickHandler}>Upload Resume</button>
+			<div>
+				<button className="button button-3d button-primary button-rounded" onClick={this.clickHandler}>Upload Resume</button>
+			</div>
 		);
 	}
 }

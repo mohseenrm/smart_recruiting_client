@@ -13460,9 +13460,13 @@ var UploadResume = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'button',
-				{ className: 'upload-resume', onClick: this.clickHandler },
-				'Upload Resume'
+				'div',
+				null,
+				_react2.default.createElement(
+					'button',
+					{ className: 'button button-3d button-primary button-rounded', onClick: this.clickHandler },
+					'Upload Resume'
+				)
 			);
 		}
 	}]);
