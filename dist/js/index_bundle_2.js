@@ -11515,9 +11515,9 @@ var _RecruiterName = __webpack_require__(133);
 
 var _RecruiterName2 = _interopRequireDefault(_RecruiterName);
 
-var _UploadResume = __webpack_require__(136);
+var _UploadJob = __webpack_require__(136);
 
-var _UploadResume2 = _interopRequireDefault(_UploadResume);
+var _UploadJob2 = _interopRequireDefault(_UploadJob);
 
 var _Tabs = __webpack_require__(135);
 
@@ -11589,68 +11589,61 @@ var RecruiterProfile = function (_React$Component) {
 		value: function render() {
 			var _this3 = this;
 
-			return (
-				// {/*<div className="profile-wrapper">
-				// 	<ProfilePhoto />
-				// 	<ProfileName />
-				// 	<UploadResume />
-				// </div>*/}
+			return _react2.default.createElement(
+				'div',
+				null,
 				_react2.default.createElement(
-					'div',
-					null,
+					_Tabs2.default,
+					{ selected: 0 },
 					_react2.default.createElement(
-						_Tabs2.default,
-						{ selected: 0 },
+						_Pane2.default,
+						{ label: 'Profile' },
 						_react2.default.createElement(
-							_Pane2.default,
-							{ label: 'Profile' },
-							_react2.default.createElement(
+							'div',
+							{ className: 'profile-wrapper' },
+							_react2.default.createElement(_RecruiterPhoto2.default, null),
+							_react2.default.createElement(_RecruiterName2.default, null),
+							_react2.default.createElement(_UploadJob2.default, null)
+						)
+					),
+					_react2.default.createElement(
+						_Pane2.default,
+						{ label: 'Notifications' },
+						this.state.mainData.map(function (data) {
+							return _react2.default.createElement(
 								'div',
-								{ className: 'profile-wrapper' },
-								_react2.default.createElement(_RecruiterPhoto2.default, null),
-								_react2.default.createElement(_RecruiterName2.default, null),
-								_react2.default.createElement(_UploadResume2.default, null)
-							)
-						),
-						_react2.default.createElement(
-							_Pane2.default,
-							{ label: 'Notifications' },
-							this.state.mainData.map(function (data) {
-								return _react2.default.createElement(
+								{ className: 'candidate', onClick: _this3.clickHandler },
+								_react2.default.createElement('div', { className: 'candidate-picture' }),
+								_react2.default.createElement(
 									'div',
-									{ className: 'candidate', onClick: _this3.clickHandler },
-									_react2.default.createElement('div', { className: 'candidate-picture' }),
+									{ className: 'detail-wrapper' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'detail-wrapper' },
+										{ className: 'candidate-details' },
 										_react2.default.createElement(
-											'div',
-											{ className: 'candidate-details' },
-											_react2.default.createElement(
-												'span',
-												{ className: 'candidate-name' },
-												data.name
-											),
-											_react2.default.createElement(
-												'span',
-												{ className: _this3.state.showDetails },
-												data.email
-											),
-											_react2.default.createElement(
-												'span',
-												{ className: _this3.state.showDetails },
-												data.phoneno
-											)
+											'span',
+											{ className: 'candidate-name' },
+											data.name
 										),
 										_react2.default.createElement(
 											'span',
 											{ className: _this3.state.showDetails },
-											data.score
+											data.email
+										),
+										_react2.default.createElement(
+											'span',
+											{ className: _this3.state.showDetails },
+											data.phoneno
 										)
+									),
+									_react2.default.createElement(
+										'span',
+										{ className: _this3.state.showDetails },
+										data.score
 									)
-								);
-							})
-						)
+								)
+							);
+						})
 					)
 				)
 			);
@@ -15024,22 +15017,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UploadResume = function (_React$Component) {
-	_inherits(UploadResume, _React$Component);
+var UploadJob = function (_React$Component) {
+	_inherits(UploadJob, _React$Component);
 
-	function UploadResume(props) {
-		_classCallCheck(this, UploadResume);
+	function UploadJob(props) {
+		_classCallCheck(this, UploadJob);
 
-		var _this = _possibleConstructorReturn(this, (UploadResume.__proto__ || Object.getPrototypeOf(UploadResume)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (UploadJob.__proto__ || Object.getPrototypeOf(UploadJob)).call(this, props));
 
 		_this.clickHandler = _this.clickHandler.bind(_this);
 		return _this;
 	}
 
-	_createClass(UploadResume, [{
+	_createClass(UploadJob, [{
 		key: 'clickHandler',
 		value: function clickHandler(e) {
-			alert("clicked");
+			e.preventDefault();
+			// alert("clicked");
 		}
 	}, {
 		key: 'render',
@@ -15050,16 +15044,16 @@ var UploadResume = function (_React$Component) {
 				_react2.default.createElement(
 					'button',
 					{ className: 'button button-3d button-primary button-rounded', onClick: this.clickHandler },
-					'Upload Resume'
+					'Upload Role Description'
 				)
 			);
 		}
 	}]);
 
-	return UploadResume;
+	return UploadJob;
 }(_react2.default.Component);
 
-exports.default = UploadResume;
+exports.default = UploadJob;
 
 /***/ }),
 /* 137 */

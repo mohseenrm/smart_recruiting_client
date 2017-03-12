@@ -68,7 +68,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "nowayregular", "Helvetica", sans-serif; }
+  font-family: "nowayregular", "Helvetica", sans-serif;
+  background: #E1E8F0; }
 
 #app {
   height: 100%;
@@ -120,14 +121,16 @@ body {
   width: 100%;
   justify-content: center;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #EBEDEC; }
 
 .tabs__labels li {
   text-align: center;
   width: 50%; }
 
 .tabs__labels li a {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
+  color: #E62739;
   padding: 8px 12px;
   display: block;
   color: #444;
@@ -142,7 +145,8 @@ body {
 
 .button {
   height: 10%;
-  width: 100%; }
+  width: 100%;
+  font-size: 1.3rem; }
 
 .candidate-picture {
   height: 10%;
@@ -183,9 +187,13 @@ body {
 .candidate-details {
   line-height: 4.4vh; }
   .candidate-details + span {
-    align-items: center; }
+    font-size: 1.5rem;
+    align-items: center;
+    color: #E62739; }
 
 .candidate-name {
   font-size: 1.2rem; }
+  .candidate-name ~ span {
+    font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */

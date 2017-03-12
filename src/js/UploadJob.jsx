@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class UploadResume extends React.Component{
+export default class UploadJob extends React.Component{
 	constructor(props){
 		super(props);
 		this.clickHandler = this.clickHandler.bind(this);
@@ -16,7 +16,7 @@ export default class UploadResume extends React.Component{
 	render(){
 		return(
 			<div>
-				<button className="button button-3d button-primary button-rounded" onClick={this.clickHandler}>Upload Resume</button>
+				<button className="button button-3d button-primary button-rounded" onClick={this.clickHandler}>Upload Role Description</button>
 			</div>
 		);
 	}

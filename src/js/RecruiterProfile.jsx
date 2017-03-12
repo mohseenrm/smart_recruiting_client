@@ -3,7 +3,7 @@
 import React from 'react';
 import RecruiterPhoto from './RecruiterPhoto.jsx';
 import RecruiteName from './RecruiterName.jsx';
-import UploadResume from './UploadResume.jsx';
+import UploadJob from './UploadJob.jsx';
 import Tabs from './Tabs.jsx';
 import Pane from './Pane.jsx';
 
@@ -43,18 +43,13 @@ export default class RecruiterProfile extends React.Component{
 
 	render(){
 		return(
-			// {/*<div className="profile-wrapper">
-			// 	<ProfilePhoto />
-			// 	<ProfileName />
-			// 	<UploadResume />
-			// </div>*/}
 			<div>
 				<Tabs selected={0}>
 					<Pane label="Profile">
 						<div className="profile-wrapper">
 						 	<RecruiterPhoto />
 						 	<RecruiteName />
-						 	<UploadResume />
+						 	<UploadJob />
 						</div>
 					</Pane>
 					<Pane label="Notifications">

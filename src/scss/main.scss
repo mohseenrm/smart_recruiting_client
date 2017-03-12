@@ -17,6 +17,8 @@ body {
     align-items: center;
     justify-content: center;
     font-family: $fonts;
+
+    background: #E1E8F0;
 }
 
 #app {
@@ -70,6 +72,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    background: #EBEDEC;
 }
 
 .tabs__labels li {
@@ -78,7 +81,8 @@ body {
 }
 
 .tabs__labels li a {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    color: #E62739;
     padding: 8px 12px;
     display: block;
     color: #444;
@@ -97,6 +101,7 @@ body {
 .button {
     height: 10%;
     width: 100%;
+    font-size: 1.3rem;
 }
 
 .candidate-picture {
@@ -131,11 +136,17 @@ body {
 
 .candidate-details {
     line-height: 4.4vh;
-    &+span {
+    & + span {
+        font-size: 1.5rem;
         align-items: center;
+        color: #E62739;
     }
 }
 
 .candidate-name {
     font-size: 1.2rem;
+
+    & ~ span {
+        font-style: italic;
+    }
 }
