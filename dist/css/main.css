@@ -68,11 +68,28 @@ body {
   height: 100%;
   width: 100%; }
 
+.profile-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column; }
+
 .profile-picture {
   height: 50%;
   background: url("../images/sample_pic.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 50%; }
+
+.profile-name {
+  text-align: center;
+  font-size: 6.5rem; }
+
+.upload-resume {
+  font-size: 4.5rem; }
 
 /*# sourceMappingURL=main.css.map */
