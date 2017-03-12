@@ -11567,11 +11567,11 @@ var RecruiterProfile = function (_React$Component) {
 				var percentData = mainData.map(function (obj) {
 					return obj.score = parseFloat(obj.score) * 100;
 				});
-				console.log(percentData);
+				// console.log(percentData);
 				var convertedData = mainData.map(function (obj) {
 					return obj.score = parseFloat(obj.score).toFixed(2);
 				});
-				console.log(convertedData);
+				// console.log(convertedData);
 				_this2.setState({ mainData: mainData });
 				console.log(_this2.state);
 			});
@@ -11622,27 +11622,31 @@ var RecruiterProfile = function (_React$Component) {
 									_react2.default.createElement('div', { className: 'candidate-picture' }),
 									_react2.default.createElement(
 										'div',
-										{ className: 'candidate-details' },
+										{ className: 'detail-wrapper' },
 										_react2.default.createElement(
-											'span',
-											{ className: 'candidate-name' },
-											data.name
+											'div',
+											{ className: 'candidate-details' },
+											_react2.default.createElement(
+												'span',
+												{ className: 'candidate-name' },
+												data.name
+											),
+											_react2.default.createElement(
+												'span',
+												{ className: _this3.state.showDetails },
+												data.email
+											),
+											_react2.default.createElement(
+												'span',
+												{ className: _this3.state.showDetails },
+												data.phoneno
+											)
 										),
 										_react2.default.createElement(
 											'span',
 											{ className: _this3.state.showDetails },
-											data.email
-										),
-										_react2.default.createElement(
-											'span',
-											{ className: _this3.state.showDetails },
-											data.phoneno
+											data.score
 										)
-									),
-									_react2.default.createElement(
-										'div',
-										{ className: _this3.state.showDetails },
-										data.score
 									)
 								);
 							})

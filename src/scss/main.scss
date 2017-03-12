@@ -93,14 +93,14 @@ body {
     background: url('../images/sample_pic.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 12%;
+    margin-right: 7%;
 }
 
 .candidate {
     @include flexbox;
     // height: 20%;
     align-items: center;
-    margin: 4%;
+    margin: 9% 0% 9% 0%;
 }
 
 .hidden {
@@ -108,9 +108,22 @@ body {
 }
 
 .show {
-    display: block;
-}
-.candidate-details{
     @include flexbox;
-    flex-direction: column;
+}
+
+.detail-wrapper {
+    @include flexbox;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.candidate-details {
+    line-height: 4.4vh;
+    &+span {
+        align-items: center;
+    }
+}
+
+.candidate-name {
+    font-size: 1.2rem;
 }

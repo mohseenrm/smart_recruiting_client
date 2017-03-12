@@ -63,12 +63,14 @@ export default class RecruiterProfile extends React.Component{
 							this.state.mainData.map(data => 
 								<div className="candidate" onClick={this.clickHandler}>
 									<div className="candidate-picture"></div>
-									<div className="candidate-details">
-										<span className="candidate-name">{data.name}</span>
-										<span className={this.state.showDetails}>{data.email}</span>
-										<span className={this.state.showDetails}>{data.phoneno}</span>
+									<div className="detail-wrapper">
+										<div className="candidate-details">
+											<span className="candidate-name">{data.name}</span>
+											<span className={this.state.showDetails}>{data.email}</span>
+											<span className={this.state.showDetails}>{data.phoneno}</span>
+										</div>
+										<span className={this.state.showDetails}>{data.score}</span>
 									</div>
-									<div className={this.state.showDetails}>{data.score}</div>
 								</div>
 							)
 						}
