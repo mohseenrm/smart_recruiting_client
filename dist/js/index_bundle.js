@@ -10889,7 +10889,7 @@ var Profile = function (_React$Component) {
 						{ selected: 0 },
 						_react2.default.createElement(
 							_Pane2.default,
-							{ label: 'Tab 1' },
+							{ label: 'Profile' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'profile-wrapper' },
@@ -10900,11 +10900,11 @@ var Profile = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_Pane2.default,
-							{ label: 'Tab 2' },
+							{ label: 'Notifications' },
 							_react2.default.createElement(
 								'div',
 								null,
-								'This will be notifications'
+								'No new notifications'
 							)
 						)
 					)
