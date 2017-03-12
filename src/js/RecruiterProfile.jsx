@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import ProfilePhoto from './ProfilePhoto.jsx';
+import RecruiterPhoto from './RecruiterPhoto.jsx';
 import RecruiteName from './RecruiterName.jsx';
 import UploadResume from './UploadResume.jsx';
 import Tabs from './Tabs.jsx';
@@ -52,7 +52,7 @@ export default class RecruiterProfile extends React.Component{
 				<Tabs selected={0}>
 					<Pane label="Profile">
 						<div className="profile-wrapper">
-						 	<ProfilePhoto />
+						 	<RecruiterPhoto />
 						 	<RecruiteName />
 						 	<UploadResume />
 						</div>

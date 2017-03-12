@@ -1,9 +1,9 @@
 'use strict';
 import React from 'react';
 
-const samplePhoto = '../images/sample_pic.png';
+const samplePhoto = '../images/ms.png';
 
-export default class ProfilePhoto extends React.Component{
+export default class RecruiterPhoto extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
@@ -13,7 +13,7 @@ export default class ProfilePhoto extends React.Component{
 
 	render(){
 		return(
-			<div className="profile-picture"></div>
+			<div className="recruiter-picture"></div>
 		);
 	}
 }

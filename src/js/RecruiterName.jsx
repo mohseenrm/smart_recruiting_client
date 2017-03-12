@@ -6,7 +6,7 @@ export default class RecruiterName extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			name : 'Intel'
+			name : 'Microsoft'
 		}
 	}
 	render(){
