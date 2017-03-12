@@ -196,4 +196,8 @@ body {
   .candidate-name ~ span {
     font-style: italic; }
 
+.job-title {
+  font-size: 1.8rem;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */

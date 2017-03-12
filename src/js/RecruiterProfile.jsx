@@ -15,7 +15,8 @@ export default class RecruiterProfile extends React.Component{
 		super(props);
 		this.state = {
 			mainData: [],
-			showDetails: "hidden"
+			showDetails: "hidden",
+			jobTitle: "Software Engineer - Vision "
 		}
 		this.clickHandler = this.clickHandler.bind(this);
 	}
@@ -29,7 +30,7 @@ export default class RecruiterProfile extends React.Component{
 				// console.log(percentData);
 				const convertedData = mainData.map(obj => obj.score = parseFloat(obj.score).toFixed(2));
 				// console.log(convertedData);
-				this.setState({mainData});
+				this.setState({mainData : mainData});
 				console.log(this.state);
 			});
 		// })
@@ -53,8 +54,9 @@ export default class RecruiterProfile extends React.Component{
 						</div>
 					</Pane>
 					<Pane label="Notifications">
-						{/*<div>No new notifications</div>*/}
+						<div className="job-title">{this.state.jobTitle}</div>
 						{
+							
 							this.state.mainData.map(data => 
 								<div className="candidate" onClick={this.clickHandler}>
 									<div className="candidate-picture"></div>

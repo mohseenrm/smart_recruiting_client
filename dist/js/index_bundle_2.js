@@ -11549,7 +11549,8 @@ var RecruiterProfile = function (_React$Component) {
 
 		_this.state = {
 			mainData: [],
-			showDetails: "hidden"
+			showDetails: "hidden",
+			jobTitle: "Software Engineer - Vision "
 		};
 		_this.clickHandler = _this.clickHandler.bind(_this);
 		return _this;
@@ -11609,6 +11610,11 @@ var RecruiterProfile = function (_React$Component) {
 					_react2.default.createElement(
 						_Pane2.default,
 						{ label: 'Notifications' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'job-title' },
+							this.state.jobTitle
+						),
 						this.state.mainData.map(function (data) {
 							return _react2.default.createElement(
 								'div',
