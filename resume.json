@@ -77,7 +77,7 @@
                 "institute_name": "Arizona State University",
                 "location": "Tempe",
                 "degree": "MCS",
-                "gpa": "4.0",
+                "gpa": "3.2",
                 "duration": "1"
             },
             {
@@ -163,7 +163,7 @@
                 "institute_name": "BITS Pilani",
                 "location": "Goa",
                 "degree": "Bachelors of Engineering",
-                "gpa": "3.7",
+                "gpa": "3.2",
                 "duration": "4"
             }
         ],
@@ -235,8 +235,8 @@
         "email": "lightsaber@gmail.com",
         "education": [
             {
-                "institute_name": "Arizona State University",
-                "location": "Tempe",
+                "institute_name": "Stanford",
+                "location": "US",
                 "degree": "MCS",
                 "gpa": "3.78",
                 "duration": "1"
